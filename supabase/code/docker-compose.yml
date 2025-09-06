@@ -427,7 +427,7 @@ services:
     command: [ "--config", "/etc/vector/vector.yml" ]
     security_opt:
       - "label=disable"
-supavisor:
+  supavisor:
     image: supabase/supavisor:2.5.1
     restart: unless-stopped
     volumes:
