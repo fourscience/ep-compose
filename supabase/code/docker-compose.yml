@@ -318,7 +318,7 @@ services:
     command: [ "start", "--main-service", "/home/deno/functions/main" ]
 
   analytics:
-    image: supabase/logflare:1.15.3
+    image: supabase/logflare:1.26.12
     restart: unless-stopped
     ports:
       - 4000:4000
