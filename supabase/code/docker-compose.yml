@@ -440,7 +440,7 @@ services:
     image: supabase/supavisor:2.7.4
     restart: unless-stopped
     volumes:
-      - ./volumes/pooler/pooler.exs:/etc/pooler/pooler.exs:ro,z
+      - ./volumes/pooler/pooler.exs:/etc/pooler/pooler.exs:ro
     healthcheck:
       test:
         [
