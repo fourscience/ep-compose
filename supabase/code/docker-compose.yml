@@ -364,7 +364,7 @@ services:
   db:
     image: supabase/postgres:15.8.1.085
     restart: unless-stopped
-    name: db
+    container_name: supabase-db
     volumes:
       - ./volumes/db/realtime.sql:/docker-entrypoint-initdb.d/migrations/99-realtime.sql:Z
       # Must be superuser to create event trigger
